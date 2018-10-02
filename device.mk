@@ -49,6 +49,10 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 34
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \
@@ -61,6 +65,12 @@ PRODUCT_PACKAGES_DEBUG += \
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
+
+# WiFi firmware symlink
+PRODUCT_PACKAGES += \
+    firmware_wlanmdsp.otaupdate_symlink \
+    firmware_wlan_mac.bin_symlink \
+    firmware_WCNSS_qcom_cfg.ini_symlink
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/sony/pdx246/pdx246-vendor.mk)
