@@ -40,6 +40,10 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 34
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \
