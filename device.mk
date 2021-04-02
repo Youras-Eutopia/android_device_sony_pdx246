@@ -28,6 +28,9 @@ PRODUCT_PACKAGES += \
 # Board API level
 BOARD_SHIPPING_API_LEVEL := 31
 
+# DebugFS
+PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
+
 # Partitions
 PRODUCT_PACKAGES += \
     vendor_bt_firmware_mountpoint \
