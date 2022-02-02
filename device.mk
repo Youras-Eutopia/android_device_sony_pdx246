@@ -37,6 +37,7 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     audio.usb.default \
     audioadsprpcd \
+    firmware_aw_cali.bin_symlink \
     lib_bt_aptx \
     lib_bt_ble \
     lib_bt_bundle \
