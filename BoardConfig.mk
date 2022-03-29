@@ -67,7 +67,7 @@ TARGET_NEEDS_DTBOIMAGE := true
 
 # Kernel (Other)
 BOARD_KERNEL_IMAGE_NAME := Image
-TARGET_KERNEL_CONFIG := gki_defconfig vendor/parrot_GKI.config
+TARGET_KERNEL_CONFIG := gki_defconfig vendor/parrot_GKI.config vendor/debugfs.config
 TARGET_KERNEL_SOURCE := kernel/sony/sm6450
 
 # Kernel modules
