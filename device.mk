@@ -192,6 +192,13 @@ PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/usb/etc
 PRODUCT_PACKAGES += \
     vndservicemanager
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.vibrator.service
+
+PRODUCT_COPY_FILES += \
+    vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
+
 # WiFi firmware symlink
 PRODUCT_PACKAGES += \
     firmware_wlanmdsp.otaupdate_symlink \
