@@ -80,6 +80,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint-service.lineage
+
 # Partitions
 PRODUCT_PACKAGES += \
     vendor_bt_firmware_mountpoint \
