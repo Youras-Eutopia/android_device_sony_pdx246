@@ -84,6 +84,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.lineage
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health-service.qti \
+    android.hardware.health-service.qti_recovery
+
 # Partitions
 PRODUCT_PACKAGES += \
     vendor_bt_firmware_mountpoint \
