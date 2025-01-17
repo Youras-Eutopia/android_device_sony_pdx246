@@ -63,6 +63,15 @@ PRODUCT_PACKAGES += \
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
+# Display
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.mapper@4.0-impl-qti-display \
+    init.qti.display_boot.rc \
+    init.qti.display_boot.sh \
+    vendor.qti.hardware.display.allocator-service \
+    vendor.qti.hardware.display.composer-service \
+    vendor.qti.hardware.display.demura-service
+
 # Partitions
 PRODUCT_PACKAGES += \
     vendor_bt_firmware_mountpoint \
