@@ -72,6 +72,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.display.demura-service
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm-service.clearkey
+
 # Partitions
 PRODUCT_PACKAGES += \
     vendor_bt_firmware_mountpoint \
