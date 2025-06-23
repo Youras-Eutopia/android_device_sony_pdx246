@@ -75,6 +75,14 @@ TARGET_KERNEL_CONFIG := gki_defconfig vendor/parrot_GKI.config vendor/debugfs.co
 TARGET_KERNEL_SOURCE := kernel/sony/sm6450
 
 # Kernel modules
+BOARD_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load.recovery))
+BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(DEVICE_PATH)/modules.blocklist
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := $(DEVICE_PATH)/modules.blocklist.vendor_boot
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load.vendor_boot))
+BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD)
+RECOVERY_KERNEL_MODULES := $(BOARD_RECOVERY_KERNEL_MODULES_LOAD)
+
 TARGET_KERNEL_EXT_MODULE_ROOT := kernel/sony/sm6450-modules
 TARGET_KERNEL_EXT_MODULES := \
     qcom/opensource/audio-kernel \
