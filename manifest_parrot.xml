@@ -1,10 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!--
-    Input:
-        manifest_parrot.xml
-        manifest.xml
-        vendor.semc.hardware.charger.manifest.xml
-        vendor.somc.hardware.wifidriver.manifest.xml
-        vendor.somc.hardware.wifi.idd.manifest.xml
+     SPDX-FileCopyrightText: 2022 The Linux Foundation
+     SPDX-License-Identifier: BSD-3-Clause
 -->
 <manifest version="4.0" type="device" target-level="6">
     <hal format="hidl">
@@ -328,23 +325,4 @@
         <transport>hwbinder</transport>
         <fqname>@1.0::IMisctaGlobal/default</fqname>
     </hal>
-    <hal format="hidl">
-        <name>vendor.somc.hardware.nfc</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::ISomcNfc/default</fqname>
-    </hal>
-    <hal format="aidl">
-        <name>vendor.somc.hardware.security.aidlsecd</name>
-        <fqname>IDeviceSecurity/default</fqname>
-    </hal>
-    <hal format="aidl">
-        <name>vendor.somc.hardware.wifi.idd</name>
-        <fqname>ISomcWifiIdd/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.somc.hardware.wifidriver</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.2::ISomcWifiDriver/default</fqname>
-    </hal>
-    <kernel target-level="6"/>
 </manifest>
