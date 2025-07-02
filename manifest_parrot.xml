@@ -133,6 +133,18 @@
         <fqname>@1.0::ICapabilityConfigStore/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.qti.hardware.data.connection</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IDataConnection/slot1</fqname>
+        <fqname>@1.1::IDataConnection/slot2</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.data.iwlan</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IIWlan/slot1</fqname>
+        <fqname>@1.1::IIWlan/slot2</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.qti.hardware.data.latency</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::ILinkLatency/default</fqname>
@@ -189,6 +201,12 @@
         <fqname>@1.0::IGPAppConnector/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.qti.hardware.radio.am</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IQcRilAudio/slot1</fqname>
+        <fqname>@1.0::IQcRilAudio/slot2</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.qti.hardware.radio.internal.deviceinfo</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IDeviceInfo/deviceinfo</fqname>
@@ -198,6 +216,24 @@
         <transport>hwbinder</transport>
         <fqname>@1.2::IUimLpa/UimLpa0</fqname>
         <fqname>@1.2::IUimLpa/UimLpa1</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.radio.qcrilhook</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IQtiOemHook/oemhook0</fqname>
+        <fqname>@1.0::IQtiOemHook/oemhook1</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.radio.qtiradio</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IQtiRadio/slot1</fqname>
+        <fqname>@1.0::IQtiRadio/slot2</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.radio.qtiradio</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.6::IQtiRadio/slot1</fqname>
+        <fqname>@2.6::IQtiRadio/slot2</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.uim</name>
@@ -303,5 +339,11 @@
         <name>vendor.somc.hardware.miscta</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IMisctaGlobal/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.somc.hardware.radio</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::ISomcHook/somchook</fqname>
+        <fqname>@1.0::ISomcHook/somchook2</fqname>
     </hal>
 </manifest>
