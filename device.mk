@@ -60,6 +60,9 @@ PRODUCT_PACKAGES += \
     android.hardware.boot-service.qti \
     android.hardware.boot-service.qti.recovery
 
+# Dalvik
+$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
@@ -107,6 +110,9 @@ PRODUCT_SHIPPING_API_LEVEL := 34
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# Storage
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # Update engine
 PRODUCT_PACKAGES += \
