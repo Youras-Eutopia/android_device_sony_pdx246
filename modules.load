@@ -208,8 +208,6 @@ qrtr-mhi.ko
 qrtr-gunyah.ko
 qca_cld3_adrastea.ko
 somc_battchg_ext.ko
-last_logs.ko
-rdtags.ko
 qca_cld3_adrastea.ko
 q6_notifier_dlkm.ko
 spf_core_dlkm.ko
@@ -265,5 +263,3 @@ msm-mmrm.ko
 mmrm_test_module.ko
 msm_video.ko
 somc_battchg_ext.ko
-last_logs.ko
-rdtags.ko
