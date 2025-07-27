@@ -26,3 +26,11 @@ PRODUCT_MODEL := XQ-ES72
 PRODUCT_MANUFACTURER := Sony
 
 PRODUCT_GMS_CLIENTID_BASE := android-sonymobile
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildDesc="XQ-ES72-user 16 70.2.A.4.22 070002A004002201396049434 release-keys" \
+    BuildFingerprint=Sony/XQ-ES72/XQ-ES72:16/70.2.A.4.22/070002A004002201396049434:user/release-keys \
+    DeviceName=XQ-ES72 \
+    DeviceProduct=XQ-ES72 \
+    SystemDevice=XQ-ES72 \
+    SystemName=XQ-ES72
