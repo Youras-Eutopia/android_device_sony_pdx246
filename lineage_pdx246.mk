@@ -22,7 +22,15 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_NAME := lineage_pdx246
 PRODUCT_DEVICE := pdx246
 PRODUCT_BRAND := Sony
-PRODUCT_MODEL := Pdx246
+PRODUCT_MODEL := XQ-ES72
 PRODUCT_MANUFACTURER := Sony
 
 PRODUCT_GMS_CLIENTID_BASE := android-sonymobile
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildDesc="XQ-ES72-user 15 70.1.A.3.188 070001A003018800523174845 release-keys" \
+    BuildFingerprint=Sony/XQ-ES72/XQ-ES72:15/70.1.A.3.188/070001A003018800523174845:user/release-keys \
+    DeviceName=XQ-ES72 \
+    DeviceProduct=XQ-ES72 \
+    SystemDevice=XQ-ES72 \
+    SystemName=XQ-ES72
