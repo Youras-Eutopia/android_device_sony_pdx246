@@ -55,6 +55,11 @@ PRODUCT_PACKAGES += \
 # Board API level
 BOARD_SHIPPING_API_LEVEL := 31
 
+# Boot control
+PRODUCT_PACKAGES += \
+    android.hardware.boot-service.qti \
+    android.hardware.boot-service.qti.recovery
+
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
