@@ -1,0 +1,14 @@
+[
+  {
+    "repository": "android_kernel_sony_sm6450",
+    "target_path": "kernel/sony/sm6450"
+  },
+  {
+    "repository": "android_kernel_sony_sm6450-devicetrees",
+    "target_path": "kernel/sony/sm6450-devicetrees"
+  },
+  {
+    "repository": "android_kernel_sony_sm6450-modules",
+    "target_path": "kernel/sony/sm6450-modules"
+  }
+]
