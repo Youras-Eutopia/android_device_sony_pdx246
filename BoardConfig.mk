@@ -21,5 +21,9 @@ TARGET_2ND_CPU_VARIANT := cortex-a75
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := parrot
 
+# Platform
+BOARD_USES_QCOM_HARDWARE := true
+TARGET_BOARD_PLATFORM := parrot
+
 # Inherit the proprietary files
 include vendor/sony/pdx246/BoardConfigVendor.mk
