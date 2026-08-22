@@ -18,5 +18,8 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a75
 
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := parrot
+
 # Inherit the proprietary files
 include vendor/sony/pdx246/BoardConfigVendor.mk
